@@ -12,7 +12,7 @@ public class CalculateInterest {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("CalculateInterest [loan=");
+        builder.append(" CalculateInterest [loan=");
         builder.append(loan);
         builder.append(", durationInMonths=");
         builder.append(durationInMonths);
