@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <bean id="baseBean" abstract="true">
+        <property name="firstName" value="Wayne" />
+        <property name="lastName" value="Rooney" />
+    </bean>
+    <bean id="subBean" class="co.uk.javavm.spring.core.bean.inheritance.SubBean"
+        parent="baseBean">
+    </bean>
+</beans>
