@@ -18,5 +18,4 @@
 	</beans:bean>
 
 	<context:component-scan base-package="co.uk.javavm.spring.mvc" />
-
 </beans:beans>
