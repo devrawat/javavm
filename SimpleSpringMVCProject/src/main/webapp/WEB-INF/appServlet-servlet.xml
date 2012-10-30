@@ -8,6 +8,16 @@
 
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
+	<!-- Interceptor bean -->
+	<beans:bean id="interceptorExample"
+		class="co.uk.javavm.spring.mvc.HandlerInterceptorExample" />
+	<!-- Interceptor definition -->
+	<interceptors>
+		<interceptor>
+			<mapping path="/intercept" />
+			<beans:ref bean="interceptorExample" />
+		</interceptor>
+	</interceptors>
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
 		in the /WEB-INF/views directory -->
